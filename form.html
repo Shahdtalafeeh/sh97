@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Username</label>
+            <input type="text" placeholder="Username" name="Username" maxlength="20">
+        </div>
+        <br>
+       <div> 
+        <label>Email</label>
+        <input type="email" placeholder="email" name="email">
+    </div>
+    <br>
+    <div>
+        <label>Birth date</label>
+        <input type="date"  name="Birth date">
+    </div>
+    <br>
+    <div>
+        <label>Registration datetime</label>
+        <input type="datetime-local" name="Registration datetime">
+        
+    </div>
+    <br>
+    <div>
+        <label>age</label>
+        <input type="number" placeholder="age" min="0" name="age">
+    </div>
+    <br>
+    <div>
+        <label>Password</label>
+        <input type="password" placeholder="new password" name="Password">
+    </div>
+    <br>
+    <div>
+        <label>Upload profile Picture</label>
+        <input type="file" name="Upload profile picture" accept="image/*">
+    </div>
+    <br>
+    <div>
+        <label>courses:</label>
+        <br>
+        <input type="checkbox" name="courses" value="Css">
+        <label>Css</label>
+        <input type="checkbox" name="courses" Value="html">
+        <label>html</label>
+        <input type="checkbox" name="courses" value="javascript">
+        <label>javascript</label>
+        
+
+    </div>
+    <br>
+    <div>
+        <input type="radio" name="gender" value="male">
+        <label>male</label>
+        <input type="radio" name="gender" value="female">
+        <label> female</label>
+    </div>
+    <br>
+    <div>
+        <textarea placeholder="note" rows="12" style="width:100% ;"></textarea>
+    </div>
+    <br>
+    <label>dropdownlist</label>
+    <select name="select">
+        <option disabled selected>--select course--</option>
+        <optgroup label="frontend">
+            <option value="html">html</option>
+            <option value="Css">css</option>
+            <option value="javascript">javascript</option>
+
+        </optgroup>
+        <optgroup label="backend">
+            <option value="c#">c#</option>
+            <option value=".net">.net</option>
+            <option value="java">java</option>
+        </optgroup>
+    </select>
+    <br>
+    <div>
+        <a href="https://www.w3schools.com/">w3schools</a>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="signup" formtarget="_blank">
+        <input type="reset">
+    </div>
+    
+    
+
+       
+    </form>
+    
+</body>
+</html>
