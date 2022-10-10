@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    height:100vh
+}
+.layout{
+    display: flex;
+    
+}
+.sidenav{
+    background-color: rgb(162, 56, 56);
+    width: 30%;
+    overflow: auto;
+    padding: 20px;
+
+        
+}
+.sidenav nav{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100vh;
+
+
+}
+.sidenav .item{
+    border: 0;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    
+
+
+}
+.layout .content{
+    width: 60% ;
+    padding: 20px;
+    margin: 20px;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+
+}
+.cardsection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+}
+.card{
+    background-color:antiquewhite;
+    font-size: 50px;
+    width: 25%;
+    height: 25%;
+  
+}
