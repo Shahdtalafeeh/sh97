@@ -4,13 +4,17 @@ body{
 }
 .layout{
     display: flex;
+    flex-direction: row;
     
 }
 .sidenav{
     background-color: rgb(162, 56, 56);
     width: 30%;
-    overflow: auto;
+    max-width: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 20px;
+    height: calc(100vh-40px);
 
         
 }
@@ -18,7 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    height: 100vh;
+    
 
 
 }
@@ -35,7 +39,7 @@ body{
     width: 60% ;
     padding: 20px;
     margin: 20px;
-    height: 100vh;
+    height: calc(100vh-40px);
     overflow: auto;
     overflow-x: hidden;
 
@@ -43,13 +47,14 @@ body{
 .cardsection{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 12px;
+    justify-content: center;
 
 }
 .card{
     background-color:antiquewhite;
-    font-size: 50px;
-    width: 25%;
-    height: 25%;
+    width: calc(25%-12px);
+    height: 120px;
   
 }
