@@ -6,13 +6,12 @@ body{
 }
 main{
     display: flex;
-    flex-direction: column;
     height: 100vh;
 }
 .dashboard{
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
+    flex-direction: column;
+    max-width: 2000px;
     border: 2px solid yellow;
     gap: 20px;
     padding: 20px;
@@ -21,28 +20,28 @@ main{
 .row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     border: 1px solid coral;
-    gap: 8px;
-    padding: 20px;
+    gap: 12px;
+    padding: 8px;
 }
 .col{
-    display: flex;
-    flex-direction: column;
+  
     border: 1px solid black;
-    padding: 10px;
+    padding: 8px;
     gap: 8px;
+    flex: 1 1 100px;
    
 }
 .flex-col{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    
-
+    border: 1px solid navy;
+    padding: 8px;
 }
 .flex-row{
-    display: flex;
-    flex-direction: row;
+ 
     border: 1px solid palevioletred;
     padding: 10px;
 
