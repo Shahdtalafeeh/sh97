@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(10,1fr);
+    gap: 1px 1px;
+    grid-template-areas:
+    "a . . . . . . . . . . . . . . . . m"
+    "b c . . . . . . . . . . h i j k l m"
+    "b c . . . . . . . . . . h i j k l m"
+    "b d e e e e e e e e e e h i j k l m"
+    "b d e e e e e e e e e e h i j k l m"
+    "b d e e e e e e e e e e h i j k l m"
+    "b d e e e e e e e e e e h i j k l m"
+    ". . . f f f f f f f f f f f f f f f"
+    ". . . g g g g g g g g g g g g g g g";
+
+    height: 100vh;
+
+}
+.a{
+    grid-area: a;
+    background-color: rgb(233, 102, 15);
+}
+.b{
+    grid-area: b;
+    background-color: orange;
+
+}
+.c{
+    grid-area: c;
+    background-color: yellow;
+}
+.d{
+    grid-area: d;
+    background-color: rgb(107, 149, 35);
+}
+.e{
+    grid-area: e;
+    background-color: green;
+}
+.h{
+    grid-area: h;
+    background-color: rgb(93, 114, 151);
+}
+.i{
+    grid-area: i;
+    background-color: rgb(48, 48, 152);
+}
+.j{
+    grid-area: j;
+    background-color: blue;
+}
+.k{
+    grid-area: k;
+    background-color: rgb(196, 16, 196);
+}
+.l{
+    grid-area: l;
+    background-color: purple;
+}
+.m{
+    grid-area: m;
+    background-color: rgb(230, 44, 75);
+}
+.g{
+    grid-area: g;
+    background-color: gray;
+}
+.f{
+    grid-area: f;
+    background-color: rgb(37, 37, 68);
+
+}
