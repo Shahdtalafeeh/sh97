@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+.text1{
+    position: absolute;
+    color: aqua;
+    top: 0;
+    font-size: 100px
+    
+}
+.text2{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 100px;
+    color: aqua;
+
+}
+.text3{
+    position: absolute;
+    width: 100%;
+   text-align: center;
+   top: 50%;
+    font-size: 100px;
+    color: aqua;
+
+}
+.text4{
+    position: absolute;
+    bottom: 10px;
+    font-size: 100px;
+    color: aqua;
+
+}
+.text5{
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    font-size: 100px;
+    color: aqua;
+
+}
+.parent{
+    position: relative;
+}

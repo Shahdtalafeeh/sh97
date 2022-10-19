@@ -9,7 +9,7 @@ body{
     grid-template-columns: repeat(18,1fr);
     grid-template-rows: repeat(10,1fr);
     gap: 1px 1px;
-    grid-template-areas:
+    /* grid-template-areas:
     "a . . . . . . . . . . . . . . . . m"
     "b c . . . . . . . . . . h i j k l m"
     "b c . . . . . . . . . . h i j k l m"
@@ -18,62 +18,108 @@ body{
     "b d e e e e e e e e e e h i j k l m"
     "b d e e e e e e e e e e h i j k l m"
     ". . . f f f f f f f f f f f f f f f"
-    ". . . g g g g g g g g g g g g g g g";
+    ". . . g g g g g g g g g g g g g g g"; */
 
     height: 100vh;
 
 }
 .a{
-    grid-area: a;
+    /* grid-area: a; */
     background-color: rgb(233, 102, 15);
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 .b{
-    grid-area: b;
+    /* grid-area: b; */
     background-color: orange;
-
+    grid-column: 1/2;
+    grid-row: 2/8;
 }
 .c{
-    grid-area: c;
+    /* grid-area: c; */
     background-color: yellow;
+    grid-column: 2/3;
+    grid-row: 2/4;
 }
 .d{
-    grid-area: d;
+    /* grid-area: d; */
     background-color: rgb(107, 149, 35);
+    grid-column: 2/3;
+    grid-row: 4/8;
 }
 .e{
-    grid-area: e;
+    /* grid-area: e; */
     background-color: green;
+    grid-column: 3/13;
+    grid-row: 4/8;
 }
+.e1{
+    /* grid-area: e; */
+    background-color: green;
+    grid-column: 4/13;
+    grid-row: 6/8;
+}
+
 .h{
-    grid-area: h;
+    /* grid-area: h; */
     background-color: rgb(93, 114, 151);
+    grid-column: 13/14;
+    grid-row: 2/8;
 }
 .i{
-    grid-area: i;
+    /* grid-area: i; */
     background-color: rgb(48, 48, 152);
+    grid-column: 14/15;
+    grid-row: 2/8;
 }
 .j{
-    grid-area: j;
+    /* grid-area: j; */
     background-color: blue;
+    grid-column: 15/16;
+    grid-row: 2/8;
 }
 .k{
-    grid-area: k;
+    /* grid-area: k; */
     background-color: rgb(196, 16, 196);
+    grid-column: 16/17;
+    grid-row: 2/8;
 }
 .l{
-    grid-area: l;
+    /* grid-area: l; */
     background-color: purple;
+    grid-column: 17/18;
+    grid-row: 2/8;
 }
 .m{
-    grid-area: m;
+    /* grid-area: m; */
     background-color: rgb(230, 44, 75);
+    grid-column: 18/19;
+    grid-row: 1/8;
 }
 .g{
-    grid-area: g;
+    /* grid-area: g; */
     background-color: gray;
+    grid-column: 4/19;
+    grid-row: 9/10;
 }
 .f{
-    grid-area: f;
+    /* grid-area: f; */
     background-color: rgb(37, 37, 68);
+    grid-column: 4/19;
+    grid-row: 8/9;
+
+}
+.x{
+    /* grid-area: f; */
+    background-color: rgb(37, 37, 68);
+    grid-column: 3/4;
+    grid-row: 6/7;
+
+}
+.o{
+    /* grid-area: f; */
+    background-color:gray;
+    grid-column: 3/4;
+    grid-row: 7/8;
 
 }
