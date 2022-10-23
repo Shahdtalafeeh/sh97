@@ -16,7 +16,6 @@ main{
 .dashboard{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     max-width: 900px;
     background-color: antiquewhite;
     gap: 20px;
@@ -24,9 +23,10 @@ main{
     margin: auto;
 
 }
-.dashboard > .row0{
+.row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 20px;
     gap: 8px;
     border-style:solid
@@ -34,58 +34,49 @@ main{
        
 
 }
-.dashboard > .row0 > .col1 {
+.col{
     border-style: solid;
     border-color: blueviolet;
-    flex: 2 1 150px;
-    height: 150px;
 
 }
-.dashboard > .row0 > .col2 {
-    border-style: solid;
-    border-color: blueviolet;
-    margin: 1px;
-    flex: 1 1 150px;
+.col-1 { 
+    flex: 1;
+    flex-basis: 150px;
+
+
+
+}
+.col-2 {
+    flex: 2;
+    flex-basis: 150px;
+
+   
+   
+
+}
+.col-3 {
+    flex: 3;
+    flex-basis: 250px;
 
 }
 
-
-
-
-.dashboard > .row0 > .col22 {
+.flex-col {
+    display: flex;
     flex-direction: column;
-    flex: 1 1 150px;
+  
 
 
     
 
 }
-.dashboard > .row0 > .col22 > .row{
+.flex-row{
     border-style: solid;
     padding: 15px;
   
+  
 }
-.dashboard > .row0 > .col22 > .row > .col{
-    border-style: solid;
-    border-color: blueviolet;
-    
-}
+
+
 
 
     
-.dashboard > .row0 > .col6{
-    border-style: solid;
-    border-color: blueviolet;
-    flex: 2 1 150px;
-    
-
-
-}
-
- 
-
-
-.dashboard > .row0 > .col0 {
-    border-style: solid;
-    border-color: blueviolet;
-}
