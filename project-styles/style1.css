@@ -2,7 +2,7 @@
 :root{
     --white:#f0f0f0;
     --blue: #7092f1;
-    --dark-blue: #070792;
+    --dark-purple: #4a0333;
     --purple: #6b1147;
     --pink: #e7accf;
 
@@ -23,6 +23,7 @@ header{
     position: sticky;
     top: 0;
     padding: 1.2rem 3rem;
+    z-index: 1;
 }
 .header-content{
     display: flex;
@@ -110,4 +111,74 @@ padding: 0 0 0 450px;
     color: var(--white);
     font-size: 1.7rem;
     margin-inline-start: 10px;
+}
+
+.title{
+    text-align: center;
+    color: var(--dark-purple);
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+
+}
+.cards{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card{
+    background-color: #fff;
+    width: 400px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15% );
+    padding: 24px;
+    border-radius: 10px;
+    transition: 0.6s ease;
+    text-align: center;
+
+
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card .icon{
+    color: var(--blue);
+    font-size: 5rem;
+}
+.card-info h3{
+    color: var(--blue);
+}
+.projects-section{
+    /* background-color: var(--dark-blue); */
+    background-image: url(/img/wp8056592.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.project-card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 160px;
+    width:350px;
+    border-radius: 8px;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+.project-card-img img{
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+}
+.project-card-info{
+   
+    
 }
