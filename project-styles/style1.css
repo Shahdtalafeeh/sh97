@@ -5,6 +5,8 @@
     --dark-purple: #4a0333;
     --purple: #6b1147;
     --pink: #e7accf;
+    --dark-blue: #0c012a;
+
 
 
 }
@@ -14,21 +16,28 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 a{
     text-decoration: none;
 }
+
+
 header{
-    background-color: var(--white);
     position: sticky;
     top: 0;
     padding: 1.2rem 3rem;
     z-index: 1;
-}
-.header-content{
+    background: var(--purple);
+    border-bottom: 1px solid var(--white);
+   
     display: flex;
     justify-content: space-between;
-    margin: auto;
+   
+}
+
+.header-content{
+  
     max-width: 1100px;
 }
 .logo{
@@ -36,6 +45,9 @@ header{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.7rem;
+
+    
+  
 }
 .navigation{
     margin: auto 0;
@@ -48,7 +60,7 @@ header{
 
 }
 .navigation a:hover{
-    color: var(--purple);
+    color: var(--white);
 }
 main{
     display: flex;
@@ -57,34 +69,29 @@ main{
     align-items: center;
 
 }
-section{
-    /* max-width: 1000px; */
-    margin: auto;
 
-}
 .main{
     display: flex;
 width: 100%;
 min-height:100vh ;
+
+align-items: center;
+padding: 0 0 0 500px;
 background-image: url(/img/cover.jpeg);
 background-size: cover;
 background-attachment: fixed;
 background-position: center;
-align-items: center;
-padding: 0 0 0 450px;
-
-
 }
+
 
 .main h2{
     color: var(--purple);
-    font-size: 1.2rem;
+    font-size: 3rem;
     font-weight: 600;
 }
-.main span{
-    display: inline;
-    color: var(--blue);
-    font-size: 3rem;
+.main p{
+    color: var(--dark-blue);
+    font-size: 1.2rem;
     font-weight: 600;
 }
 .main h1{
@@ -105,7 +112,7 @@ padding: 0 0 0 450px;
 }
 .main-btn:hover{
     background-color: rgb(78, 78, 241);
-    transform: scale(1.1);
+    transform: rotate(360deg);
 }
 .social-icons a{
     color: var(--white);
@@ -117,7 +124,7 @@ padding: 0 0 0 450px;
     text-align: center;
     color: var(--dark-purple);
     font-size: 1.7rem;
-    margin: 1rem 0;
+    margin: 1rem 0 3.5rem;
 }
 .content{
     display: flex;
@@ -128,16 +135,16 @@ padding: 0 0 0 450px;
 
 }
 .cards{
-    min-height: 75vh;
+    min-height: 80vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    padding: 1.5rem;
 }
 .card{
     background-color: #fff;
     width: 400px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 15% );
-    padding: 24px;
+    box-shadow: 0px 0px 20px 3px rgb(10 17 241 / 15%);
+    padding: 2rem;
     border-radius: 10px;
     transition: 0.6s ease;
     text-align: center;
@@ -155,14 +162,16 @@ padding: 0 0 0 450px;
     color: var(--blue);
 }
 .projects-section{
-    /* background-color: var(--dark-blue); */
+    width: 100%;
     background-image: url(/img/wp8056592.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding: 2rem 0;
+    min-height: 70vh;
 }
 .project-card{
-    background-color: #fff;
+    background-color: transparent;
     border: 1px solid #fff;
     min-height: 160px;
     width:350px;
@@ -179,6 +188,47 @@ padding: 0 0 0 450px;
     border-radius: 8px;
 }
 .project-card-info{
+padding: 1rem;
+   
+    
+}
+.project-card-description{
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between
+}
+#contact{
+    padding: 3rem 1rem;
+}
+.footer{
+    background-color: var(--dark-purple);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem ;
+    color: #fff;
+}
+.footer-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+.footer-title span{
+    color: var(--blue);
+}
+@media(max-width:1000px){
+    .main{
+        padding-left: 30px;
+    }
+    header{
+        padding: 1rem 0.3rem;
+    }
+    .card{
+        width: 350px;
+    }
    
     
 }
